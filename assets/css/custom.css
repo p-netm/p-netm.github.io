@@ -1,0 +1,72 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(216, 181, 256, 1), rgba(30, 174, 152, 1));
+}
+
+.masthead {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+}
+
+nav#sidebar-wrapper {
+    background-color: rgb(30, 163, 142);
+}
+
+@-webkit-keyframes arrow-down{
+    from {left:0px; top:-5px;}
+    to {left:0px; top:5px;}
+}
+@-moz-keyframes arrow-down {
+    from {left:0px; top:-5px;}
+    to {left:0px; top:5px;}
+}
+
+@-ms-keyframes  arrow-down{
+    from {left:0px; top:-5px;}
+    to {left:0px; top:5px;}
+}
+
+@-o-keyframes  arrow-down{
+    from {left:0px; top:-5px;}
+    to {left:0px; top:5px;}
+}
+@keyframes arrow-down {
+    from {left:0px; top:-5px;}
+    to {left:0px; top:5px;}
+}
+
+.angle-down {
+    position: relative;
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    animation-name: arrow-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+a.btn:link, a.btn:visited, button{
+    background: transparent;
+    border: solid 1px black;
+    color: black;
+    text-shadow: 0 1px 0 #000;
+}
+a.btn:hover, a.btn:active{
+    box-shadow: 3px 5px rgba(0,0,0, 0.7);
+}
+a.btn:active{
+    box-shadow: 5px 7px rgba(0,0,0, 1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
