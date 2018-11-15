@@ -14,7 +14,7 @@
 }
 
 nav#sidebar-wrapper {
-    background-color: rgb(30, 163, 142);
+    background-color: rgb(21, 119, 101);
 }
 
 @-webkit-keyframes arrow-down{
@@ -69,4 +69,26 @@ a.btn:active{
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
+}
+.skills{
+    background-image: url('../img/cloud1.svg');
+    background-size:cover;
+}
+.skills{
+    background-image: url('../img/mycloud.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#skills, #portfolio{
+    padding: 0;
+}
+
+#skills h3{
+    margin: 20px 0;
+}
+.caption-content{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
