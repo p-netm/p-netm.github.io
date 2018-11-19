@@ -74,12 +74,12 @@
 </section>
 <section id="skills" class="content-section text-center">
     <h2 class="mb-5">Skills</h2>
-    <div class='masthead skills'>
+    <div class='skills'>
     </div>
 </section>
 <section id="portfolio" class="content-section">
     <div class="container">
-        <div class="content-section-heading text-center">
+        <div class="header content-section-heading text-center">
             <h2 class="mb-5">My Projects</h2>
         </div>
         <div class="row no-gutters">
@@ -116,6 +116,84 @@
             </div>
         </div>
     </div>
+    <style>
+        
+#skills{
+    height: 100vh;
+    background-color: #ffffff;
+}
+#portfolio{
+    background-color: rgba(100,230,100,0.1);
+}
+.skills-image{
+    display: none;
+}
+
+.skills{
+    background-image: url('assets/img/mycloud.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+@supports (display: grid){
+    @media screen and (min-width:900px){
+        #portfolio .container{
+            display: grid;
+        }
+        .portfolio-grid-container{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: header repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+        #portfolio .header{
+            grid-template-name: header
+        }
+    }
+        }
+    
+
+@media screen and (max-width:900px){
+    //small screen devices
+    #skills{
+        border: 3px solid red;
+    }
+    
+}
+@media screen and (max-width:640px){
+    //small screen devices
+    .skills{
+        border: 2px solid black;
+        width: 250px !important;
+        height: 300px !important;
+        
+    }
+}
+
+@media screen and (max-width:320px){
+    //small screen devices
+    
+    .skills{
+        width: 250px;
+        height: 300px;
+        
+    }
+    
+    
+}
+
+
+@media screen and (min-width:900px){
+    //small screen devices
+    #skills{
+        border: 3px solid red;
+    }   
+}
+
+    </style>
 </section>
 <footer id="footer" class="footer text-center">
     <h2 class="mb-5">Social Places</h2>
